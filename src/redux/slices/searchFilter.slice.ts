@@ -3,8 +3,8 @@ import { RootState } from ".."
 import { ApiFilter } from "../../types/interface.homedata"
 
 const initialState:ApiFilter = {
-    sortby: 'Highest Price',
-    type: 'Villa',
+    sortby: 'Date Added',
+    type: '',
     searchTerm: '',
 }
 
