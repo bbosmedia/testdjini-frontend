@@ -29,7 +29,7 @@ const Cards = ({data, isLoading}: {data?: IHomeData[], isLoading: boolean}) => {
             </div>
             <div className="card-right">
                 <h3>{home.title}</h3>
-                <div className='location'><span className='card-location-icon'> <SlLocationPin /></span>Murcia, Costa Cálida, Spanje<span></span></div>
+                <div className='location'><span className='card-location-icon'> <SlLocationPin /></span>{home.address}<span></span></div>
                 <div className='bedroom'><span>{home.bedrooms} Slaapkamers</span> <span>{home.bathrooms} Badkamers</span></div>
                 <p className='cost'>€ {formatNumber(home.cost)}</p>
             </div>
