@@ -51,6 +51,8 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "prettier": "^2.7.1",
+    "eslint": "8.23.0"
   }
 }

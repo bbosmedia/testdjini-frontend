@@ -15,56 +15,56 @@
             display: none;
         }
     }
+}
 
-    input{
-        flex: 1;
-        width: 100%;
-        border: none;
-        outline: none;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        padding-right: 4px;
-        @media screen and (max-width:576px) {
-            padding: 0 10px;
-        }
+.searchbar-input{
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-right: 4px;
+    @media screen and (max-width:576px) {
+        padding: 0 10px;
+    }
+}
+
+.search-bar-btn, .search-bar-btn-mobile{
+    height: 48px;
+    width: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EC7F07;
+    border-radius: 0px 4px 4px 0px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    &:disabled{
+        background: #E0E0E0;
     }
 
-    .search-bar-btn, .search-bar-btn-mobile{
-        height: 48px;
-        width: 148px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #EC7F07;
-        border-radius: 0px 4px 4px 0px;
-        color: #fff;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-
-        &:disabled{
-            background: #E0E0E0;
-        }
-
-        @media screen and (max-width:576px) {
-            width: 48px;
-        }
+    @media screen and (max-width:576px) {
+        width: 48px;
     }
+}
 
-    .search-bar-btn{
-        @media screen and (max-width:576px) {
-            display: none;
-        }
-    }
-
-    .search-bar-btn-mobile{
+.search-bar-btn{
+    @media screen and (max-width:576px) {
         display: none;
-        @media screen and (max-width:576px) {
-            display: inline-block;
-        }
+    }
+}
+
+.search-bar-btn-mobile{
+    display: none;
+    @media screen and (max-width:576px) {
+        display: inline-block;
     }
 }
