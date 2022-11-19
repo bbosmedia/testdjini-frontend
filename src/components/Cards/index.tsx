@@ -11,7 +11,7 @@ const Cards = ({data, isLoading}: {data?: IHomeData[], isLoading: boolean}) => {
   return (
     <div className='cards'>
         {isLoading && numbers.map(item=>(
-            <div className="card">
+            <div key={item} className="card">
             <div className="card-left">
                 <Skeleton height={250} />
             </div>
@@ -23,7 +23,7 @@ const Cards = ({data, isLoading}: {data?: IHomeData[], isLoading: boolean}) => {
         </div>
         ))}
         {isLoading === false && data && data.map(home =>(
-            <div className="card">
+            <div key={home.id} className="card">
             <div className="card-left">
                 <img src={home.img} alt="" />
             </div>
