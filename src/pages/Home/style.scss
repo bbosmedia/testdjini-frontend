@@ -1,0 +1,15 @@
+.home-page{
+    margin-top: 120px;
+    width: 100%;
+
+    .inner{
+        display: grid;
+        grid-template-columns: 270px 1fr;
+        gap: 40px;
+        width: 100%;
+
+        @media screen and (max-width:768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
